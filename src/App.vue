@@ -32,8 +32,6 @@ export default {
     this.getApi();
   }
 
-
-
 }
 
 </script>
