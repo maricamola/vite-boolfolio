@@ -89,3 +89,21 @@ const router = createRouter({
 4. Nel router, sotto il path inseriamo;
 
 **component: Error404**
+
+-------
+
+## Creazione Navbar Header
+
+1. Creiamo un cartella "partials" o "components" dove inseriremo il nostro Header
+
+2. Importiamo l'Header in App.vue e nel suo template **<Header />**
+
+3. All'interno dell'Header costruiamo la nostra navbar
+
+4. Per rendere il menu navigabile aggiungiamo le rotte come da esempio;
+
+      <li>
+        <router-link :to="{ name:'home' }">Home</router-link>
+      </li>
+
+

@@ -3,8 +3,13 @@
 import {store} from './store/store.js';
 import axios from 'axios';
 
+import Header from './components/Header.vue';
+
 export default {
   name:'home',
+  components: {
+    Header
+  },
 
   data(){
     return{
@@ -40,22 +45,10 @@ export default {
 
   <div class="container">
 
+    <Header />
+
     <router-view></router-view>
-<!-- 
-    <h1>Elenco progetti</h1>
-
-    <ul>
-      <li
-        v-for="project in projects"
-        :key="project.id"
-      >
-
-      <span class="">{{ project.title }}</span>
-
-      <span>{{ project.date_creation }}</span>
-
-      </li>
-    </ul> -->
+    
   </div>
 
 </template>
