@@ -39,6 +39,9 @@ export default {
 <template>
 
   <div class="container">
+
+    <router-view></router-view>
+<!-- 
     <h1>Elenco progetti</h1>
 
     <ul>
@@ -52,7 +55,7 @@ export default {
       <span>{{ project.date_creation }}</span>
 
       </li>
-    </ul>
+    </ul> -->
   </div>
 
 </template>
