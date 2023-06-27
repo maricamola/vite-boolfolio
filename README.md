@@ -24,4 +24,14 @@ Colleghiamo questo progetto ad una repo separata. (laravel-api)
 
 ------------
 
+## Aggiungere il router a Vue e inserire un menu di navigazione fra le pagine.
+
+1. Installare il router dal terminale 
+
+**npm install vue-router@4 --force**
+
+2. Creiamo il file router.js 
+
+3. Creiamo la vista quindi una cartella "pages" dentro src
+
 

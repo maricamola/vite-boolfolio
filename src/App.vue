@@ -38,23 +38,22 @@ export default {
 
 <template>
 
-    <div class="container">
+  <div class="container">
     <h1>Elenco progetti</h1>
 
-      <ul>
-        <li
-          v-for="project in projects"
-          :key="project.id"
-        >
-  
-        <span class="title">{{ project.title }}</span>
-  
-        <span>{{ project.date_creation }}</span>
-  
-        </li>
-        </ul>
-    </div>
+    <ul>
+      <li
+        v-for="project in projects"
+        :key="project.id"
+      >
 
+      <span class="">{{ project.title }}</span>
+
+      <span>{{ project.date_creation }}</span>
+
+      </li>
+    </ul>
+  </div>
 
 </template>
 
