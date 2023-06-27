@@ -107,3 +107,34 @@ const router = createRouter({
       </li>
 
 
+------------
+
+## Gestire le date formattate
+
+1. Facciamo una computed
+
+      computed:{
+      formattedData(){
+        const d = new Date(this.project.date_creation);
+        const options ={
+          weekday: "long",
+          year: "numeric",
+          month: "long",
+          day: "numeric",
+        };
+
+        //Se non sappiamo la lingua, con questa funzione prendiamo la lingua dal server
+        // function getUserLocale(){
+        //   const userLocale = navigator.languages && navigator.languages.length
+        //                     ? navigator.languages[0]
+        //                     : navigator.languages;
+        //   return userLocale;
+        // }
+
+        return d.toLocaleString('it-IT' , options);
+      }
+    }
+
+2. E cicliamo questo nel tag 
+
+      <p>{{ formattedData }}</p>

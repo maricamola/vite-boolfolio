@@ -1,15 +1,19 @@
-body{
-    background-color: cadetblue;
-    
-}
-
 .container{
     width: 90%;
     max-width: 1200px;
     margin: 50px auto;
-    font-family:Verdana, Geneva, Tahoma, sans-serif
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .title{
     margin-right: 10px;
+}
+
+.container-inner{
+    background-color: #BFA58E;
+    min-height: 400px;
+    color: black;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }

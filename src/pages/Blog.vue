@@ -1,14 +1,14 @@
 <script>
 
-import {store} from './store/store.js';
+import {store} from '../store/store';
 import axios from 'axios';
+import ProjectCard from '../components/ProjectCard.vue';
 
-import Header from './components/Header.vue';
 
 export default {
-  name:'home',
-  components: {
-    Header
+  name: 'Blog',
+  components:{
+    ProjectCard
   },
 
   data(){
@@ -34,27 +34,24 @@ export default {
   },
 
   mounted(){
-    this.getApi();
+    this.getApi(store.apiUrl + 'projects');
   }
-
 }
-
 </script>
 
 <template>
+  <div class="container-inner">
+      <h1>Blog</h1>
 
-  <div class="container">
-
-    <Header />
-
-    <router-view></router-view>
-
+      <div>
+        <ProjectCard 
+          v-for="project in projects" 
+          :key="project.id" 
+          :project="project"/>
+      </div>
   </div>
-
 </template>
 
-<style lang="scss" scoped>
-
-@use './scss/style.scss'
+<style>
 
 </style>
