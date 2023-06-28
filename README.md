@@ -106,7 +106,6 @@ const router = createRouter({
         <router-link :to="{ name:'home' }">Home</router-link>
       </li>
 
-
 ------------
 
 ## Gestire le date formattate

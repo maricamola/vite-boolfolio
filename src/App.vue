@@ -18,11 +18,11 @@ export default {
   },
 
   methods:{
-    getApi(){
+    getApi(endpoint){
 
-      axios.get(store.apiUrl + 'projects')
+      axios.get(endpoint)
       .then(results => {
-        this.projects = results.data;
+        this.projects = results.data.data;
         console.log(this.projects);
       })
     },
@@ -34,7 +34,7 @@ export default {
   },
 
   mounted(){
-    this.getApi();
+    this.getApi(store.apiUrl + 'projects');
   }
 
 }
